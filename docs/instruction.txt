@@ -1,0 +1,16 @@
+How to Run
+
+1. Requirements
+    - Operating System: Windows, Linux
+    - Software Dependencies: NodeJs
+
+2. Installation Instructions
+    - git clone the project
+
+3. First-Time Setup
+    - Backend
+        - open terminal and run the command "npm run seed" for database seeding.
+        - run the command "npm start"
+    - Frontend
+        - open terminal and run the command "npm start"
+
