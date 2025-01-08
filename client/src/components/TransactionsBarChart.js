@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-import ProductTransaction from "../services/productTransaction.service"; // Ensure the correct path
-
-// Import necessary components from chart.js
+import ProductTransaction from "../services/productTransaction.service"; 
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,7 +11,6 @@ import {
   Legend,
 } from "chart.js";
 
-// Register the components with Chart.js
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -30,7 +27,7 @@ const TransactionsBarChart = ({ selectedMonth }) => {
     const fetchChartData = async () => {
       try {
         const response = await ProductTransaction.getBarChart(selectedMonth);
-        // Assuming response.data.data is an array of priceRangeCounts
+        
         const priceRanges = response.data.data.map(item => item.priceRange);
         const itemsSold = response.data.data.map(item => item.count);
 
@@ -47,7 +44,7 @@ const TransactionsBarChart = ({ selectedMonth }) => {
     if (selectedMonth) {
       fetchChartData();
     }
-  }, [selectedMonth]); // Re-fetch when selectedMonth changes
+  }, [selectedMonth]); 
 
   const data = {
     labels: chartData?.priceRanges || [],
