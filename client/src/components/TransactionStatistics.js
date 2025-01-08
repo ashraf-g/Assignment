@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProductTransaction from "../services/productTransaction.service"; // Ensure this path is correct
+import ProductTransaction from "../services/productTransaction.service"; 
 
 const TransactionStatistics = ({ selectedMonth }) => {
   const [statistics, setStatistics] = useState({
