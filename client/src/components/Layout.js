@@ -1,4 +1,4 @@
-// src/components/Layout.js
+
 import React from "react";
 import Sidenav from "./Sidenav";
 
