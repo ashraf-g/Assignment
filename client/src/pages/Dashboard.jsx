@@ -1,38 +1,4 @@
-// import React, { useState } from "react";
-// import MonthDropdown from "../components/MonthDropdown";
-// import SearchTransactions from "../components/SearchTransactions";
-// import TransactionStatistics from "../components/TransactionStatistics";
-// import TransactionsBarChart from "../components/TransactionsBarChart";
-// import TransactionsTable from "../components/TransactionTable";
 
-// const Dashboard = () => {
-//   const [selectedMonth, setSelectedMonth] = useState("March");
-//   const [searchQuery, setSearchQuery] = useState("");
-//   return (
-//     <>
-//       <div className="p-6">
-//         <MonthDropdown
-//           selectedMonth={selectedMonth}
-//           onChangeMonth={setSelectedMonth}
-//         />
-//         <SearchTransactions
-//           searchQuery={searchQuery}
-//           onSearchChange={setSearchQuery}
-//         />
-
-//         <TransactionStatistics selectedMonth={selectedMonth} />
-//         <TransactionsBarChart selectedMonth={selectedMonth} />
-//         <TransactionsTable
-//           selectedMonth={selectedMonth}
-//           searchQuery={searchQuery}
-//         />
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Dashboard;
-// src/pages/Dashboard.js
 import React, { useState } from "react";
 import MonthDropdown from "../components/MonthDropdown";
 import SearchTransactions from "../components/SearchTransactions";
