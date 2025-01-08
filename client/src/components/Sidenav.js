@@ -1,4 +1,4 @@
-// src/components/Sidenav.js
+
 import React from "react";
 
 const Sidenav = ({ activeSection, setActiveSection }) => {
